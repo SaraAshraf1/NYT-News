@@ -1,0 +1,13 @@
+.background {
+  min-height: 720px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../../assets/pexels-cottonbro-3944454.jpg");
+  min-height: 100vh;
+}
+.title {
+  top: 40px;
+  font-family: auto;
+  font-weight: bold;
+}

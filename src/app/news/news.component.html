@@ -1,0 +1,18 @@
+<div>
+<div class="col-sm-8 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3 p-2">
+<input type="text" class="form-control  " name="searchText" placeholder="Search in {{currentSection}}" [(ngModel)]="searchText" >
+
+</div> 
+    
+<div class="news-item ">
+    <app-loading-spinner *ngIf="showSpinner | async" class= "offset-md-6" ></app-loading-spinner>
+<app-news-item *ngFor="let news of sectionNews | filter:searchText|paginate:{itemsPerPage:2,currentPage:currentPageNumber};" [news]="news"></app-news-item>
+<pagination-controls *ngIf="!(errMsg | async) &&!(showSpinner | async) " class="pagination"  (pageChange)="currentPageNumber= $event"></pagination-controls>
+</div>
+<div *ngIf="errMsg | async as error" class="alert alert-danger error-msg" role="alert">
+    <i class="fas fa-exclamation-triangle"></i>
+    Error:{{error}}
+  </div>
+</div>
+
+  

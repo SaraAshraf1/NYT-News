@@ -1,0 +1,22 @@
+.news-item {
+  overflow-y: hidden;
+  padding: 20px;
+}
+.search-text {
+  width: 40%;
+  margin: auto;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.error-msg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.full-width {
+  width: 100%;
+}

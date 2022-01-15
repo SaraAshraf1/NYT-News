@@ -1,0 +1,13 @@
+.highlight-color {
+  background-color: #17a2b8 !important;
+}
+.btn-group-vertical {
+  position: relative;
+  top: -80px;
+  padding: 0px 10px;
+}
+.section-btn {
+  color: white;
+  border-color: white;
+  background-color: #656a6a;
+}

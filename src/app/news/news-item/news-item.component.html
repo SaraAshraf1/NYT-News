@@ -1,0 +1,15 @@
+<div class="card mb-3 col-md-8 offset-md-2 " >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{news.multimedia[0].url}}" class="img-fluid rounded-start" alt="{{news.multimedia[0].caption?news.multimedia[0]:news.title}}">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{news.title}}</h5>
+          <p class="card-text">{{news.abstract}} <a class="external-link" href="{{news.url}}" target="_blank">READ MORE <i class="fas fa-link"></i></a></p>
+          <p class="blockquote-footer">{{news.byline}} <cite title="Published Date">{{news.published_date | date}}</cite></p>
+          <span><i class="fas fa-tags me-2"></i><span style="background-color:#17a2b8" class="badge me-1" *ngFor="let tag of news.des_facet">{{tag}}</span></span>
+        </div>
+      </div>
+    </div>
+  </div>

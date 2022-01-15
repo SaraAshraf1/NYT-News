@@ -1,0 +1,6 @@
+
+  <div  class="btn-group-vertical" role="group" aria-label="Basic outlined example">
+    <button *ngFor="let section of renderedSections" class="nav-item" routerLink="/section/{{section}}"
+    routerLinkActive="highlight-color" type="button" class="btn section-btn">{{section}}</button>
+
+  </div>
